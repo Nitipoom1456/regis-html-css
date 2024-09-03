@@ -12,6 +12,8 @@ body {
     background-color: white;
     padding: 50px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .register-form h1 {
@@ -92,4 +94,14 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+    .form-group {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
